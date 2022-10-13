@@ -1,0 +1,10 @@
+﻿using AquariumPeek.Application.Common.Mappings;
+using AquariumPeek.Domain.Entities;
+
+namespace AquariumPeek.Application.TodoLists.Queries.ExportTodos;
+public class TodoItemRecord : IMapFrom<TodoItem>
+{
+    public string? Title { get; set; }
+
+    public bool Done { get; set; }
+}
